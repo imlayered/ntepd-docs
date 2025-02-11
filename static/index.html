@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="images/ntepd.png" type="image/png">
+        <title>docs</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    </head>
+    <body>
+        <button class="mobile-menu-trigger">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="container">
+            <div class="sidebar-backdrop"></div>
+            <div class="sidebar">
+                <div class="sidebar-header">
+                    <div class="sidebar-top">
+                        <h2 class="app-title">ntepd (docs)</h2>
+                    </div>
+                </div>
+                <div id="notesList" class="notes-list"></div>
+                <div class="version-info">v1.0.0 © 2025 ntepd.com</div>
+            </div>
+            <div class="editor">
+                <div id="editorContainer" class="editor-content">
+                    <div class="editor-header">
+                        <input type="text" id="titleInput" placeholder="Untitled Page" readonly>
+                    </div>
+                    <div class="editor-workspace">
+                        <div id="editor" class="markdown-editor" contenteditable="false" spellcheck="false"></div>
+                        <div id="preview" class="markdown-preview active"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
